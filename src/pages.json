@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "path": "pages/butler/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "管家"
+      }
+    },
+    {
+      "path": "pages/shop/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "商城"
+      }
+    },
+    {
+      "path": "pages/tools/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "工具"
+      }
+    },
+    {
+      "path": "pages/me/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f7f9fb",
+    "backgroundColor": "#f7f9fb"
+  },
+  "tabBar": {
+    "color": "#404752",
+    "selectedColor": "#0061a4",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/butler/index",
+        "text": "管家",
+        "iconPath": "static/tabbar/butler.png",
+        "selectedIconPath": "static/tabbar/butler-active.png"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "商城",
+        "iconPath": "static/tabbar/shop.png",
+        "selectedIconPath": "static/tabbar/shop-active.png"
+      },
+      {
+        "pagePath": "pages/tools/index",
+        "text": "工具",
+        "iconPath": "static/tabbar/tools.png",
+        "selectedIconPath": "static/tabbar/tools-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/me.png",
+        "selectedIconPath": "static/tabbar/me-active.png"
+      }
+    ]
+  }
+}

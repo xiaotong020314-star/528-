@@ -214,25 +214,6 @@
       </scroll-view>
     </view>
 
-    <!-- Bottom Nav -->
-    <view class="bottom-nav fade-in-section" :style="{ animationDelay: '0.25s' }">
-      <view class="nav-item nav-item--active">
-        <text class="material-symbols-outlined icon-28 nav-icon--active" style="font-variation-settings: 'FILL' 1;">smart_toy</text>
-        <text class="nav-label nav-label--active">管家</text>
-      </view>
-      <view class="nav-item">
-        <text class="material-symbols-outlined icon-26">shopping_bag</text>
-        <text class="nav-label">商城</text>
-      </view>
-      <view class="nav-item">
-        <text class="material-symbols-outlined icon-26">grid_view</text>
-        <text class="nav-label">工具</text>
-      </view>
-      <view class="nav-item">
-        <text class="material-symbols-outlined icon-26">person</text>
-        <text class="nav-label">我的</text>
-      </view>
-    </view>
   </view>
 </template>
 
@@ -1055,57 +1036,4 @@ $purple-500: #a855f7;
   font-family: 'Geist', sans-serif;
 }
 
-/* ===== Bottom Nav ===== */
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 160rpx;
-  padding: 0 48rpx;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(24rpx);
-  -webkit-backdrop-filter: blur(24rpx);
-  border-top: 2rpx solid $slate-100;
-  box-shadow: 0 -8rpx 40rpx rgba(0, 0, 0, 0.02);
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12rpx;
-  padding: 8rpx 24rpx;
-  color: $on-surface-variant;
-  opacity: 0.6;
-
-  &--active {
-    color: $primary;
-    opacity: 1;
-  }
-
-  &:active {
-    .nav-icon--active {
-      transform: scale(0.9);
-    }
-  }
-}
-
-.nav-label {
-  font-size: 11px;
-  font-weight: 500;
-  color: $on-surface-variant;
-  font-family: 'Geist', sans-serif;
-
-  &--active {
-    color: $primary;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
-}
 </style>

@@ -110,25 +110,6 @@
       </view>
     </view>
 
-    <!-- Bottom Nav Bar (visual only) -->
-    <view class="bottom-nav">
-      <view
-        v-for="nav in bottomNavItems"
-        :key="nav.label"
-        class="bottom-nav__item"
-        :class="{ 'bottom-nav__item--active': nav.active }"
-      >
-        <text
-          class="icon icon--nav"
-          :class="{ 'icon--nav-active': nav.active }"
-        >{{ nav.icon }}</text>
-        <text
-          class="bottom-nav__label"
-          :class="{ 'bottom-nav__label--active': nav.active }"
-        >{{ nav.label }}</text>
-      </view>
-    </view>
-
     <!-- AI Toast (visual only) -->
     <view class="ai-toast" :class="{ 'ai-toast--visible': showToast }">
       <view class="ai-toast__content">
@@ -195,13 +176,6 @@ const aiCards = [
     match: '88',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVH89TlcSVId11h_bMfud1V4z7usZNQ97CygHJffXa5kY4ICSRY7SnXeVqxmQG14rnjQ5oJdNGDkZW-0Kz4RtTnP4eiST-5_RqXHf1fW8xLPXYvvk5wu7iqhR-5XdA_lFjm-1tLQGDRG5uvr8b3k5t3DmIDhYWYOvbwvRTlFCihsOe4NIw2JsWYAceRurPFbqK_SM_hQXywa7J7ITvc_EYEf3ZznyMAKU-XSt8YY3n16xeHCctymEhG5sSoMdXCQ-Zi_VovhTTsdw',
   },
-]
-
-const bottomNavItems = [
-  { icon: 'smart_toy', label: '管家', active: false },
-  { icon: 'shopping_bag', label: '商城', active: true },
-  { icon: 'apps', label: '服务', active: false },
-  { icon: 'person', label: '我的', active: false },
 ]
 
 onMounted(() => {
@@ -586,51 +560,6 @@ $yellow-500: #eab308;
     font-size: 12px;
     color: $on-surface-variant;
     margin-top: 4rpx;
-  }
-}
-
-/* ===== Bottom Nav (visual only) ===== */
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 24rpx;
-  padding-bottom: 64rpx;
-  padding-left: 64rpx;
-  padding-right: 64rpx;
-  background-color: rgba($bg, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 2rpx solid $surface-container-low;
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: $on-surface-variant;
-    transition: color 0.2s;
-
-    &--active {
-      color: $primary;
-    }
-  }
-
-  &__label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-top: 8rpx;
-    color: $on-surface-variant;
-
-    &--active {
-      color: $primary;
-    }
   }
 }
 

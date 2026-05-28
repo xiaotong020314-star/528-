@@ -112,25 +112,6 @@
       </view>
     </view>
 
-    <!-- Bottom Nav Bar (purely visual) -->
-    <view class="bottom-nav">
-      <view class="nav-item">
-        <text class="icon-font nav-icon">smart_toy</text>
-        <text class="nav-label">管家</text>
-      </view>
-      <view class="nav-item">
-        <text class="icon-font nav-icon">shopping_bag</text>
-        <text class="nav-label">商城</text>
-      </view>
-      <view class="nav-item nav-item-active">
-        <text class="icon-font nav-icon-active">construction</text>
-        <text class="nav-label nav-label-active">工具</text>
-      </view>
-      <view class="nav-item">
-        <text class="icon-font nav-icon">person</text>
-        <text class="nav-label">我的</text>
-      </view>
-    </view>
   </view>
 </template>
 
@@ -627,57 +608,4 @@ $white: #ffffff;
   white-space: nowrap;
 }
 
-/* ===== Bottom Nav ===== */
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 24rpx;
-  padding-bottom: 64rpx;
-  padding-left: 32rpx;
-  padding-right: 32rpx;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(24rpx);
-  -webkit-backdrop-filter: blur(24rpx);
-  border-top: 1rpx solid $white;
-  box-shadow: 0 -8rpx 48rpx rgba(0, 0, 0, 0.04);
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 8rpx 32rpx;
-  color: rgba(64, 71, 82, 0.4);
-
-  .nav-icon {
-    font-size: 24px;
-  }
-
-  .nav-label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
-}
-
-.nav-item-active {
-  color: $primary;
-
-  .nav-icon-active {
-    font-size: 24px;
-    font-variation-settings: 'FILL' 1;
-  }
-
-  .nav-label-active {
-    font-size: 10px;
-    font-weight: 700;
-  }
-}
 </style>
